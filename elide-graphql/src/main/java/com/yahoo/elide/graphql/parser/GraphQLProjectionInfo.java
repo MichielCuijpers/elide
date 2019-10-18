@@ -6,6 +6,7 @@
 
 package com.yahoo.elide.graphql.parser;
 
+import com.yahoo.elide.request.Attribute;
 import com.yahoo.elide.request.EntityProjection;
 import com.yahoo.elide.request.Relationship;
 import graphql.language.SourceLocation;
@@ -24,4 +25,6 @@ public class GraphQLProjectionInfo {
     @Getter private final Collection<EntityProjection> projections;
 
     @Getter private final Map<SourceLocation, Relationship> relationshipMap;
+
+    @Getter private final Map<SourceLocation, Attribute> attributeMap;
 }
